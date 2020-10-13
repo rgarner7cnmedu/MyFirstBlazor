@@ -5,3 +5,21 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<Alert Show="@ShowAlert">
+    Chid content from index.razor
+</Alert>
+
+<button @onclick ="@ToggleAlert">
+    Toggle
+</button>
+
+@code{
+
+    public bool ShowAlert { get; set; } = true;
+
+    public void ToggleAlert()
+    {
+        ShowAlert = !ShowAlert;
+    }
+}
