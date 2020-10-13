@@ -180,4 +180,16 @@ app {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
+
+    /*For Chapter 2 Demo CSS*/
+    .red-background {
+        background: red;
+        color: white;
+    }
+
+    .yellow-background {
+        background: yellow;
+        color: black;
+    }
+    /*End Chapter 2 Demo CSS*/
 }
