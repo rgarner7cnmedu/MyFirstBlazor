@@ -16,14 +16,13 @@ namespace MyFirstBlazor.Client.Pages
                 if(value != this.show)
                 {
                     this.show = value;
-                    ShowChanged?.Invoke(this.show);
-                }
-                
+                    ShowChanged.InvokeAsync(this.show);
+                }                
             }
         }
 
         [Parameter]
-        public Action<bool> ShowChanged { get; set; }
+        public EventCallback<bool> ShowChanged { get; set; }
 
         [Parameter]
         public RenderFragment ChildContent { get; set; }

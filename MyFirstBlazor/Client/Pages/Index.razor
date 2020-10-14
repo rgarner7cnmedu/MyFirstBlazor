@@ -13,22 +13,7 @@ Welcome to your new app.
 <button @onclick="@ToggleAlert">Toggle</button>
 @code{
 
-    private bool showAlert;
-
-    public bool ShowAlert
-    {
-        get { return showAlert; }
-        set
-        {
-            if (value != showAlert)
-            {
-                showAlert = value;
-                this.StateHasChanged();
-            }
-        }
-
-    }
-
+    public bool ShowAlert { get; set; } = true;
 
     public void ToggleAlert()
     {

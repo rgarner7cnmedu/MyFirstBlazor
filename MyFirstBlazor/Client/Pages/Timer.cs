@@ -13,12 +13,12 @@ namespace MyFirstBlazor.Client.Pages
         public double TimeInSeconds { get; set; }
 
         [Parameter]
-        public Action Tick { get; set; }
+        public EventCallback Tick { get; set; }
 
         protected override void OnInitialized()
         {
             var timer = new System.Threading.Timer(
-                    callback: (_)=>InvokeAsync(()=>Tick?.Invoke()),
+                    callback: (_)=>InvokeAsync(()=>Tick.InvokeAsync(null)),
                     state: null,
                     dueTime: TimeSpan.FromSeconds(TimeInSeconds),
                     period: Timeout.InfiniteTimeSpan
