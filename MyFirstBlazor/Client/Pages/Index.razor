@@ -19,7 +19,17 @@ Welcome to your new app.
     </DismissableAlert>
 </GrandMother>
 
+<input @bind-value="@Val" type="text"/>
+<button class="btn btn-primary" @onclick="@ClearForm">Clear Form</button>
+
 @code{
+    public string Val { get; set; } = "";
+
+    public void ClearForm()
+    {
+        Val = "";
+    }
+
 
     DismissableAlert x;
 
