@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MyFirstBlazor.Client.Pages
+namespace MyFirstBlazor.Components
 {
     public class Timer:ComponentBase
     {   

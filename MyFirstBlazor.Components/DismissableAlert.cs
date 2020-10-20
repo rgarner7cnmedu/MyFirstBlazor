@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using System;
 
-namespace MyFirstBlazor.Client.Pages
+namespace MyFirstBlazor.Components
 {
     public partial class DismissableAlert
     {
