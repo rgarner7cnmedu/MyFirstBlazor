@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstBlazor.Client", "MyF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstBlazor.Shared", "MyFirstBlazor\Shared\MyFirstBlazor.Shared.csproj", "{A280A540-8F08-4066-AD57-7073D3E9EE5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstBlazor.Components", "MyFirstBlazor.Components\MyFirstBlazor.Components.csproj", "{59414C48-0643-49E2-B6FC-4F354C506134}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstBlazor.Components", "MyFirstBlazor.Components\MyFirstBlazor.Components.csproj", "{59414C48-0643-49E2-B6FC-4F354C506134}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
